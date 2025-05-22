@@ -22,9 +22,6 @@ OC.L10N.register(
     "Invalid UUID" : "UUID inválido",
     "Notification sent with success." : "Se envío notificación con éxito",
     "File signed" : "Documento firmado",
-    "Renewed with success. Access the link again." : "Renovado con éxito, Acceda al link nuevamente",
-    "Invalid data to sign file" : "Datos inválidos para firmar documentos",
-    "The code to sign file was successfully requested." : "El código para firmar fue exitosamente solicitado",
     "Element created with success" : "Elemento creado con éxito",
     "Elements created with success" : "Elementos creados con éxito",
     "Elements not found" : "Elementos no encontrados",
@@ -34,6 +31,7 @@ OC.L10N.register(
     "deleted" : "Borrado",
     "Invalid password" : "Contraseña inválida",
     "File is too big" : "El archivo es demasiado grande.",
+    "Invalid data to sign file" : "Datos inválidos para firmar documentos",
     "File not found" : "Archivo no encontrado",
     "File already exists" : "El archivo ya existe",
     "Invalid file provided" : "Archivo proporcionado inválido",
@@ -54,6 +52,7 @@ OC.L10N.register(
     "Previous" : "Anterior",
     "Next" : "Siguiente",
     "Confirm" : "Confirmar",
+    "Administration" : "Administración",
     "Details" : "Detalles",
     "Certificate" : "Certificado",
     "Type" : "Tipo",
@@ -81,7 +80,6 @@ OC.L10N.register(
     "No" : "No",
     "Reset to default" : "Restablecer al predeterminado",
     "Forgot password?" : "¿Olvidaste tu contraseña?",
-    "No date" : "Sin fecha",
-    "Other activities" : "Otras actividades"
+    "No date" : "Sin fecha"
 },
 "nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;");

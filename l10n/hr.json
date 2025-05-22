@@ -17,7 +17,6 @@
     "Invalid UUID" : "Nevažeći UUID",
     "Notification sent with success." : "Obavijest je uspješno poslana.",
     "File signed" : "Datoteka je potpisana",
-    "Invalid data to sign file" : "Nevažeći podaci datoteke za potpisivanje",
     "Element created with success" : "Element je uspješno stvoren",
     "Elements created with success" : "Elementi su uspješno stvoreni",
     "Elements not found" : "Elementi nisu pronađeni",
@@ -51,6 +50,7 @@
     "Invalid element type" : "Nevažeća vrsta elementa",
     "Field %s not found" : "Polje %s nije pronađeno",
     "Field %s does not belong to user" : "Polje %s ne pripada korisniku",
+    "Invalid data to sign file" : "Nevažeći podaci datoteke za potpisivanje",
     "This file cannot be signed. Invalid status: %s" : "Ovu datoteku nije moguće potpisati. Nevažeći status: %s",
     "File type: %s. Must be a fileID of %s format." : "Vrsta datoteke: %s. Mora biti fileID u formatu %s.",
     "Invalid fileID" : "Nevažeći fileID",
@@ -58,7 +58,6 @@
     "You do not have permission for this action." : "Nemate dopuštenje za ovu radnju.",
     "Invalid status code for file." : "Nevažeća šifra statusa za datoteku.",
     "Sign process already started. Unable to change status." : "Postupak potpisivanja je započeo. Nije moguće promijeniti status.",
-    "Inform or UUID or a File object" : "Objekt Inform ili UUID ili File",
     "No user data" : "Nema korisničkih podataka",
     "User %s has no email address." : "Korisnik %s nema adresu e-pošte.",
     "Email required" : "Adresa e-pošte je obavezna",
@@ -137,6 +136,7 @@
     "Sign" : "Potpiši",
     "Confirm" : "Potvrdi",
     "Send reminder" : "Pošalji podsjetnik",
+    "Administration" : "Administracija",
     "Open sidebar" : "Otvori bočnu traku",
     "Details" : "Pojedinosti",
     "Certificate" : "Vjerodajnica",
@@ -174,6 +174,7 @@
     "Current password" : "Trenutna zaporka",
     "New password" : "Nova zaporka",
     "Repeat password" : "Ponovi zaporku",
+    "Remove" : "Ukloni",
     "Message" : "Poruka",
     "Resource" : "Resurs",
     "Dependencies" : "Ovisnosti",
@@ -202,11 +203,6 @@
     "No date" : "Nema datuma",
     "Return" : "Natrag",
     "Open in LibreSign" : "Otvori u sustavu LibreSign",
-    "Requested by {name}, at {date}" : "Zatražio {name} na dan {date}",
-    "Other activities" : "Druge aktivnosti",
-    "Digital signed by LibreSign." : "Digitalno potpisano sustavom LibreSign.",
-    "Account not exist" : "Račun ne postoji",
-    "No signature, click here to create a new" : "Nema potpisa, kliknite ovdje za stvaranje novog",
-    "No initials, click here to create a new" : "Nema inicijala, kliknite ovdje za stvaranje novog"
+    "Requested by {name}, at {date}" : "Zatražio {name} na dan {date}"
 },"pluralForm" :"nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;"
 }

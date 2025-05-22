@@ -47,8 +47,10 @@ OC.L10N.register(
     "Password reset" : "Password reset",
     "Current password" : "Current password",
     "New password" : "New password",
+    "Remove" : "O'chirish",
     "Yes" : "Yes",
     "No" : "No",
+    "Remove background" : "Fonni olib tashlash",
     "Forgot password?" : "Parolni unutdingizmi?"
 },
 "nplurals=1; plural=0;");

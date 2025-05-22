@@ -44,6 +44,7 @@ OC.L10N.register(
     "Previous" : "Previo",
     "Next" : "Siguiente",
     "Confirm" : "Confirmar",
+    "Administration" : "Administración",
     "Open sidebar" : "Abrir barra lateral",
     "Details" : "Detalles",
     "Certificate" : "Certificado",
@@ -82,6 +83,7 @@ OC.L10N.register(
     "Current password" : "Contraseña actual",
     "New password" : "Nueva contraseña",
     "Repeat password" : "Repetir contraseña",
+    "Remove" : "Borrar",
     "Status of setup" : "Estado de la configuración",
     "Message" : "Mensaje",
     "Resource" : "Recurso",
@@ -91,7 +93,6 @@ OC.L10N.register(
     "Reset to default" : "Restablecer al predeterminado",
     "Name:" : "Nombre:",
     "Status:" : "Estado:",
-    "No date" : "Sin fecha",
-    "Other activities" : "Otras actividades"
+    "No date" : "Sin fecha"
 },
 "nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;");

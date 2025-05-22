@@ -46,6 +46,7 @@ OC.L10N.register(
     "Previous" : "Tidligere",
     "Next" : "Næste",
     "Confirm" : "Bekræft",
+    "Administration" : "Administration",
     "Open sidebar" : "Åbn sidebar",
     "Details" : "Detaljer",
     "Certificate" : "Certifikat",
@@ -87,6 +88,7 @@ OC.L10N.register(
     "Current password" : "Nuværende adgangskode",
     "New password" : "Ny adgangskode",
     "Repeat password" : "Gentag adgangskode",
+    "Remove" : "Fjern",
     "Message" : "Besked",
     "Resource" : "Ressource",
     "Dependencies" : "Afhængigheder",
@@ -97,7 +99,6 @@ OC.L10N.register(
     "Forgot password?" : "Glemt adgangskode?",
     "Name:" : "Navn:",
     "No date" : "Ingen dato",
-    "Return" : "Aflever",
-    "Other activities" : "Andre aktiviteter"
+    "Return" : "Aflever"
 },
 "nplurals=2; plural=(n != 1);");

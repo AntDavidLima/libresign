@@ -116,6 +116,7 @@ OC.L10N.register(
     "Sign" : "Allekirjoita",
     "Confirm" : "Vahvista",
     "Send reminder" : "Lähetä muistutus",
+    "Administration" : "Ylläpito",
     "Open sidebar" : "Avaa sivupalkki",
     "Details" : "Tiedot",
     "Certificate" : "Varmenne",
@@ -166,6 +167,7 @@ OC.L10N.register(
     "Current password" : "Nykyinen salasana",
     "New password" : "Uusi salasana",
     "Repeat password" : "Toista salasana",
+    "Remove" : "Poista",
     "Message" : "Viesti",
     "Resource" : "Resurssi",
     "Dependencies" : "Riippuvuudet",
@@ -193,11 +195,6 @@ OC.L10N.register(
     "No date" : "Ei päiväystä",
     "Return" : "Palaa",
     "Open in LibreSign" : "Avaa LibreSignissa",
-    "Requested by {name}, at {date}" : "Pyytänyt {name} {date}",
-    "Other activities" : "Muut tapahtumat",
-    "Digital signed by LibreSign." : "Digitaalisesti allekirjoitettu LibreSignilla.",
-    "Account not exist" : "Tiliä ei ole olemassa",
-    "No signature, click here to create a new" : "Ei allekirjoitusta, napsauta tästä luodaksesi uuden",
-    "No initials, click here to create a new" : "Ei nimikirjaimia, napsauta tästä luodaksesi uuden"
+    "Requested by {name}, at {date}" : "Pyytänyt {name} {date}"
 },
 "nplurals=2; plural=(n != 1);");

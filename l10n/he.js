@@ -43,6 +43,7 @@ OC.L10N.register(
     "Previous" : "הקודם",
     "Next" : "הבא",
     "Confirm" : "אימות",
+    "Administration" : "ניהול",
     "Open sidebar" : "פתיחת סרגל הצד",
     "Details" : "פרטים",
     "Certificate" : "אישור",
@@ -67,6 +68,7 @@ OC.L10N.register(
     "Current password" : "ססמה נוכחית",
     "New password" : "ססמה חדשה",
     "Repeat password" : "חזרה על הססמה",
+    "Remove" : "הסרה",
     "Message" : "הודעה",
     "Resource" : "משאב",
     "Dependencies" : "תלויות",
@@ -75,7 +77,6 @@ OC.L10N.register(
     "Reset to default" : "איפוס לבררת מחדל",
     "Forgot password?" : "שכחת ססמה?",
     "Name:" : "שם:",
-    "No date" : "No date",
-    "Other activities" : "פעילויות אחרות"
+    "No date" : "No date"
 },
 "nplurals=3; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: 2;");

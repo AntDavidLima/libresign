@@ -41,6 +41,7 @@ OC.L10N.register(
     "Previous" : "Antaŭa",
     "Next" : "Sekva",
     "Confirm" : "Konfirmi",
+    "Administration" : "Administrado",
     "Open sidebar" : "Malfermi flankopanelon",
     "Details" : "Detaloj",
     "Certificate" : "Atestilo",
@@ -72,7 +73,6 @@ OC.L10N.register(
     "No" : "No",
     "Reset to default" : "Restarigi al defaŭltaj agordoj",
     "Forgot password?" : "Ĉu vi forgesis vian pasvorton?",
-    "No date" : "No date",
-    "Other activities" : "Alia aktivado"
+    "No date" : "No date"
 },
 "nplurals=2; plural=(n != 1);");

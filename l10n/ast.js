@@ -47,6 +47,7 @@ OC.L10N.register(
     "Previous" : "Anterior",
     "Next" : "Siguiente",
     "Confirm" : "Confirmar",
+    "Administration" : "Alministración",
     "pending" : "pendiente",
     "Open sidebar" : "Abrir la barra llateral",
     "Details" : "Detalles",
@@ -83,6 +84,7 @@ OC.L10N.register(
     "Current password" : "Contraseña actual",
     "New password" : "Contraseña nueva",
     "Optional attributes" : "Atributos opcionales",
+    "Remove" : "Quitar",
     "Message" : "Mensaxe",
     "Dependencies" : "Dependencies",
     "Legal information" : "Información llegal",
@@ -91,7 +93,6 @@ OC.L10N.register(
     "Reset to default" : "Reafitar los valores",
     "Forgot password?" : "¿Escaeciesti la contraseña?",
     "Name:" : "Nome:",
-    "Status:" : "Estáu:",
-    "Other activities" : "Otres actividaes"
+    "Status:" : "Estáu:"
 },
 "nplurals=2; plural=(n != 1);");

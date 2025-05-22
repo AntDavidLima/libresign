@@ -47,6 +47,7 @@ OC.L10N.register(
     "Previous" : "Назад",
     "Next" : "Далі",
     "Confirm" : "Підтвердити",
+    "Administration" : "Адміністрування",
     "Open sidebar" : "Показати бічну панель",
     "Details" : "Деталі",
     "Certificate" : "Сертифікат",
@@ -87,6 +88,7 @@ OC.L10N.register(
     "Current password" : "Поточний пароль",
     "New password" : "Новий пароль",
     "Repeat password" : "Повторіть пароль",
+    "Remove" : "Вилучити",
     "Message" : "Повідомлення",
     "Resource" : "Ресурс",
     "Dependencies" : "Залежності",
@@ -97,7 +99,6 @@ OC.L10N.register(
     "Forgot password?" : "Забули пароль?",
     "Name:" : "Ім'я:",
     "Status:" : "Стан:",
-    "No date" : "Без дати",
-    "Other activities" : "Інша активність"
+    "No date" : "Без дати"
 },
 "nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);");

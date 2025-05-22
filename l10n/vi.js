@@ -42,6 +42,7 @@ OC.L10N.register(
     "Previous" : "Trước",
     "Next" : "Tiếp theo",
     "Confirm" : "Xác nhận",
+    "Administration" : "Quản trị viên",
     "Open sidebar" : "Mở thanh bên",
     "Details" : "Chi tiết",
     "Certificate" : "Chứng chỉ",
@@ -77,6 +78,7 @@ OC.L10N.register(
     "Password reset" : "Đặt lại mật khẩu",
     "Current password" : "Mật khẩu cũ",
     "New password" : "Mật khẩu mới",
+    "Remove" : "Xoá",
     "Resource" : "Tài nguyên",
     "Dependencies" : "Các phụ thuộc",
     "Yes" : "Có",
@@ -84,7 +86,6 @@ OC.L10N.register(
     "Reset to default" : "Đặt lại về mặc định",
     "Forgot password?" : "Quên mật khẩu sao?",
     "Name:" : "Tên:",
-    "No date" : "No date",
-    "Other activities" : "Hoạt động khác"
+    "No date" : "No date"
 },
 "nplurals=1; plural=0;");

@@ -8,7 +8,6 @@ declare(strict_types=1);
 
 namespace OCA\Libresign\Tests\Unit\Service;
 
-use bovigo\vfs\vfsStream;
 use Jeidison\JSignPDF\JSignPDF;
 use Jeidison\JSignPDF\Sign\JSignParam;
 use OCA\Libresign\AppInfo\Application;
@@ -18,6 +17,7 @@ use OCA\Libresign\Handler\CertificateEngine\CertificateEngineFactory;
 use OCA\Libresign\Handler\SignEngine\JSignPdfHandler;
 use OCA\Libresign\Service\SignatureBackgroundService;
 use OCA\Libresign\Service\SignatureTextService;
+use OCA\Libresign\Service\SignerElementsService;
 use OCP\IAppConfig;
 use OCP\IDateTimeZone;
 use OCP\IRequest;
@@ -42,14 +42,11 @@ final class JSignPdfHandlerTest extends \OCA\Libresign\Tests\Unit\TestCase {
 		parent::setUpBeforeClass();
 
 		self::$certificateEngineFactory = \OCP\Server::get(CertificateEngineFactory::class);
-		// The storage can't be modified when create a new instance to
-		// don't lost the root cert
-		vfsStream::setup('certificate');
 		$appConfig = self::getMockAppConfig();
 		$appConfig->setValueString(Application::APP_ID, 'certificate_engine', 'openssl');
 		$certificateEngine = self::$certificateEngineFactory->getEngine();
 		$certificateEngine
-			->setConfigPath('vfs://certificate/')
+			->setConfigPath(\OCP\Server::get(ITempManager::class)->getTemporaryFolder('certificate'))
 			->generateRootCert('', []);
 
 		self::$certificateContent = $certificateEngine
@@ -150,7 +147,7 @@ final class JSignPdfHandlerTest extends \OCA\Libresign\Tests\Unit\TestCase {
 		);
 
 		$this->signatureBackgroundService->method('getImagePath')->willReturn(
-			realpath(__DIR__ . '/../../../../img/LibreSign.png')
+			realpath(__DIR__ . '/../../../../../img/LibreSign.png')
 		);
 
 		$this->appConfig->setValueFloat('libresign', 'template_font_size', $templateFontSize);
@@ -202,12 +199,12 @@ final class JSignPdfHandlerTest extends \OCA\Libresign\Tests\Unit\TestCase {
 					'lly' => 0,
 					'urx' => 0,
 					'ury' => 0,
-				], realpath(__DIR__ . '/../../../../img/app-dark.png'))],
+				], realpath(__DIR__ . '/../../../../../img/app-dark.png'))],
 				'signatureWidth' => 100,
 				'signatureHeight' => 100,
 				'template' => '',
 				'signatureBackgroundType' => 'default',
-				'renderMode' => 'DESCRIPTION_ONLY',
+				'renderMode' => SignerElementsService::RENDER_MODE_DESCRIPTION_ONLY,
 				'templateFontSize' => 10,
 				'pdfContent' => '%PDF-1.6',
 				'hashAlgorithm' => '',
@@ -220,12 +217,12 @@ final class JSignPdfHandlerTest extends \OCA\Libresign\Tests\Unit\TestCase {
 					'lly' => 20,
 					'urx' => 30,
 					'ury' => 40,
-				], realpath(__DIR__ . '/../../../../img/app-dark.png'))],
+				], realpath(__DIR__ . '/../../../../../img/app-dark.png'))],
 				'signatureWidth' => 20,
 				'signatureHeight' => 20,
 				'template' => '',
 				'signatureBackgroundType' => 'default',
-				'renderMode' => 'DESCRIPTION_ONLY',
+				'renderMode' => SignerElementsService::RENDER_MODE_DESCRIPTION_ONLY,
 				'templateFontSize' => 10,
 				'pdfContent' => '%PDF-1.6',
 				'hashAlgorithm' => '',
@@ -238,16 +235,16 @@ final class JSignPdfHandlerTest extends \OCA\Libresign\Tests\Unit\TestCase {
 					'lly' => 20,
 					'urx' => 30,
 					'ury' => 40,
-				], realpath(__DIR__ . '/../../../../img/app-dark.png'))],
+				], realpath(__DIR__ . '/../../../../../img/app-dark.png'))],
 				'signatureWidth' => 20,
 				'signatureHeight' => 20,
 				'template' => 'aaaaa',
 				'signatureBackgroundType' => 'default',
-				'renderMode' => 'DESCRIPTION_ONLY',
+				'renderMode' => SignerElementsService::RENDER_MODE_DESCRIPTION_ONLY,
 				'templateFontSize' => 10,
 				'pdfContent' => '%PDF-1.6',
 				'hashAlgorithm' => '',
-				'params' => '-a -kst PKCS12 --l2-text "aaaaa" -V -pg 2 -llx 10 -lly 20 -urx 30 -ury 40 --bg-path merged.png --hash-algorithm SHA256'
+				'params' => '-a -kst PKCS12 --l2-text "aaaaa" -V -pg 2 -llx 10 -lly 20 -urx 30 -ury 40 --bg-path background.png --hash-algorithm SHA256'
 			],
 			'font size != 10' => [
 				'visibleElements' => [self::getElement([
@@ -256,16 +253,16 @@ final class JSignPdfHandlerTest extends \OCA\Libresign\Tests\Unit\TestCase {
 					'lly' => 20,
 					'urx' => 30,
 					'ury' => 40,
-				], realpath(__DIR__ . '/../../../../img/app-dark.png'))],
+				], realpath(__DIR__ . '/../../../../../img/app-dark.png'))],
 				'signatureWidth' => 20,
 				'signatureHeight' => 20,
 				'template' => 'aaaaa',
 				'signatureBackgroundType' => 'default',
-				'renderMode' => 'DESCRIPTION_ONLY',
+				'renderMode' => SignerElementsService::RENDER_MODE_DESCRIPTION_ONLY,
 				'templateFontSize' => 11,
 				'pdfContent' => '%PDF-1.6',
 				'hashAlgorithm' => '',
-				'params' => '-a -kst PKCS12 --l2-text "aaaaa" -V -pg 2 -llx 10 -lly 20 -urx 30 -ury 40 --font-size 11 --bg-path merged.png --hash-algorithm SHA256'
+				'params' => '-a -kst PKCS12 --l2-text "aaaaa" -V -pg 2 -llx 10 -lly 20 -urx 30 -ury 40 --font-size 11 --bg-path background.png --hash-algorithm SHA256'
 			],
 			'background = deleted: bg-path = signature' => [
 				'visibleElements' => [self::getElement([
@@ -274,12 +271,12 @@ final class JSignPdfHandlerTest extends \OCA\Libresign\Tests\Unit\TestCase {
 					'lly' => 20,
 					'urx' => 30,
 					'ury' => 40,
-				], realpath(__DIR__ . '/../../../../img/app-dark.png'))],
+				], realpath(__DIR__ . '/../../../../../img/app-dark.png'))],
 				'signatureWidth' => 20,
 				'signatureHeight' => 20,
 				'template' => 'aaaaa',
 				'signatureBackgroundType' => 'deleted',
-				'renderMode' => 'DESCRIPTION_ONLY',
+				'renderMode' => SignerElementsService::RENDER_MODE_DESCRIPTION_ONLY,
 				'templateFontSize' => 10,
 				'pdfContent' => '%PDF-1.6',
 				'hashAlgorithm' => '',
@@ -292,12 +289,12 @@ final class JSignPdfHandlerTest extends \OCA\Libresign\Tests\Unit\TestCase {
 					'lly' => 20,
 					'urx' => 30,
 					'ury' => 40,
-				], realpath(__DIR__ . '/../../../../img/app-dark.png'))],
+				], realpath(__DIR__ . '/../../../../../img/app-dark.png'))],
 				'signatureWidth' => 20,
 				'signatureHeight' => 20,
 				'template' => 'aaaaa',
 				'signatureBackgroundType' => 'default',
-				'renderMode' => 'GRAPHIC_AND_DESCRIPTION',
+				'renderMode' => SignerElementsService::RENDER_MODE_GRAPHIC_AND_DESCRIPTION,
 				'templateFontSize' => 10,
 				'pdfContent' => '%PDF-1.6',
 				'hashAlgorithm' => '',
@@ -310,12 +307,12 @@ final class JSignPdfHandlerTest extends \OCA\Libresign\Tests\Unit\TestCase {
 					'lly' => 100,
 					'urx' => 351,
 					'ury' => 200,
-				], realpath(__DIR__ . '/../../../../img/app-dark.png'))],
+				], realpath(__DIR__ . '/../../../../../img/app-dark.png'))],
 				'signatureWidth' => 350,
 				'signatureHeight' => 100,
 				'template' => 'aaaaa',
 				'signatureBackgroundType' => 'default',
-				'renderMode' => 'SIGNAME_AND_DESCRIPTION',
+				'renderMode' => SignerElementsService::RENDER_MODE_SIGNAME_AND_DESCRIPTION,
 				'templateFontSize' => 10,
 				'pdfContent' => '%PDF-1.6',
 				'hashAlgorithm' => '',
@@ -328,12 +325,12 @@ final class JSignPdfHandlerTest extends \OCA\Libresign\Tests\Unit\TestCase {
 					'lly' => 20,
 					'urx' => 30,
 					'ury' => 40,
-				], realpath(__DIR__ . '/../../../../img/app-dark.png'))],
+				], realpath(__DIR__ . '/../../../../../img/app-dark.png'))],
 				'signatureWidth' => 20,
 				'signatureHeight' => 20,
 				'template' => 'aaaaa',
 				'signatureBackgroundType' => 'deleted',
-				'renderMode' => 'SIGNAME_AND_DESCRIPTION',
+				'renderMode' => SignerElementsService::RENDER_MODE_SIGNAME_AND_DESCRIPTION,
 				'templateFontSize' => 10,
 				'pdfContent' => '%PDF-1.6',
 				'hashAlgorithm' => '',
@@ -351,7 +348,7 @@ final class JSignPdfHandlerTest extends \OCA\Libresign\Tests\Unit\TestCase {
 				'signatureHeight' => 20,
 				'template' => 'aaaaa',
 				'signatureBackgroundType' => 'deleted',
-				'renderMode' => 'SIGNAME_AND_DESCRIPTION',
+				'renderMode' => SignerElementsService::RENDER_MODE_SIGNAME_AND_DESCRIPTION,
 				'templateFontSize' => 10,
 				'pdfContent' => '%PDF-1.6',
 				'hashAlgorithm' => '',
@@ -364,12 +361,12 @@ final class JSignPdfHandlerTest extends \OCA\Libresign\Tests\Unit\TestCase {
 					'lly' => 20,
 					'urx' => 30,
 					'ury' => 40,
-				], realpath(__DIR__ . '/../../../../img/app-dark.png'))],
+				], realpath(__DIR__ . '/../../../../../img/app-dark.png'))],
 				'signatureWidth' => 20,
 				'signatureHeight' => 20,
 				'template' => '',
 				'signatureBackgroundType' => 'default',
-				'renderMode' => 'GRAPHIC_AND_DESCRIPTION',
+				'renderMode' => SignerElementsService::RENDER_MODE_GRAPHIC_AND_DESCRIPTION,
 				'templateFontSize' => 10,
 				'pdfContent' => '%PDF-1.6',
 				'hashAlgorithm' => '',

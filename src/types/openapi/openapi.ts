@@ -4,6 +4,23 @@
  */
 
 export type paths = {
+    "/index.php/apps/libresign/certificate-policy.pdf": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        /** Certificate policy of this instance */
+        get: operations["certificate_policy-get-certificate-policy"];
+        put?: never;
+        post?: never;
+        delete?: never;
+        options?: never;
+        head?: never;
+        patch?: never;
+        trace?: never;
+    };
     "/index.php/apps/libresign/develop/pdf": {
         parameters: {
             query?: never;
@@ -1200,6 +1217,36 @@ export type components = {
 };
 export type $defs = Record<string, never>;
 export interface operations {
+    "certificate_policy-get-certificate-policy": {
+        parameters: {
+            query?: never;
+            header?: never;
+            path?: never;
+            cookie?: never;
+        };
+        requestBody?: never;
+        responses: {
+            /** @description OK */
+            200: {
+                headers: {
+                    "Content-Disposition"?: "inline; filename=\"certificate-policy.pdf\"";
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/pdf": string;
+                };
+            };
+            /** @description Not found */
+            404: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": unknown;
+                };
+            };
+        };
+    };
     "develop-pdf": {
         parameters: {
             query?: never;
@@ -3126,8 +3173,12 @@ export interface operations {
     "notify-notification-dismiss": {
         parameters: {
             query: {
-                /** @description The sign request id */
-                signRequestId: number;
+                /** @description The type of object */
+                objectType: string;
+                /** @description The identifier value of LibreSign file */
+                objectId: number;
+                /** @description The subject of notification */
+                subject: string;
                 /** @description Timestamp of notification to dismiss */
                 timestamp: number;
             };

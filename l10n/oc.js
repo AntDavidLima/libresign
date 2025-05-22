@@ -16,7 +16,6 @@ OC.L10N.register(
     "Name is mandatory" : "Lo nom es obligatòri",
     "Invalid UUID" : "UUID invalid",
     "File signed" : "Fichièr signat",
-    "Invalid data to sign file" : "Donadas pas validas per signar lo fichièr",
     "Elements not found" : "Elements pas trobats",
     "Element not found" : "Element pas trobat",
     "draft" : "borrolhon",
@@ -26,6 +25,7 @@ OC.L10N.register(
     "document to sign" : "document de signar",
     "visible element" : "element visible",
     "File is too big" : "Fichièr tròp pesuc",
+    "Invalid data to sign file" : "Donadas pas validas per signar lo fichièr",
     "This file cannot be signed. Invalid status: %s" : "Aqueste fichièrs se pòt pas signat. Estat invalid : %s",
     "Invalid fileID" : "fileID invalid",
     "You are not allowed to request signing" : "Avètz pas l'autorizacion de demandar una signatura",
@@ -80,6 +80,7 @@ OC.L10N.register(
     "Next" : "Seguent",
     "Sign" : "Signar",
     "Confirm" : "Confirmar",
+    "Administration" : "Administracion",
     "pending" : "pendent",
     "Open sidebar" : "Dobrir lo panèl lateral",
     "Details" : "Detalhs",
@@ -102,6 +103,7 @@ OC.L10N.register(
     "Password reset" : "Reïnicializacion de senhal",
     "Current password" : "Senhal actual",
     "New password" : "Senhal novèl",
+    "Remove" : "Suprimir",
     "Resource" : "Ressorsa",
     "Generating certificate." : "Generacion del certificat",
     "Generated certificate!" : "Certificat generat !",
@@ -112,8 +114,6 @@ OC.L10N.register(
     "Forgot password?" : "Senhal oblidat ?",
     "This document is valid" : "Aqueste document es valid",
     "No date" : "Cap de data",
-    "Return" : "Tornar",
-    "Other activities" : "Autras activitats",
-    "Digital signed by LibreSign." : "Signatura numerica per LibreSign."
+    "Return" : "Tornar"
 },
 "nplurals=2; plural=(n > 1);");

@@ -50,6 +50,7 @@ OC.L10N.register(
     "Sign" : "Знак",
     "Confirm" : "Потврди",
     "Send reminder" : "Испрати потсетник",
+    "Administration" : "Администрација",
     "Open sidebar" : "Отвори странична лента",
     "Details" : "Детали",
     "Certificate" : "Сертификат",
@@ -84,6 +85,7 @@ OC.L10N.register(
     "Password reset" : "Ресетирај лозинка",
     "Current password" : "Моментална лозинка",
     "New password" : "Нова лозинка",
+    "Remove" : "Отстрани ",
     "Message" : "Порака",
     "Resource" : "Ресурси",
     "Yes" : "Да",
@@ -93,7 +95,6 @@ OC.L10N.register(
     "Forgot password?" : "Заборавена лозинка?",
     "Name:" : "Име:",
     "Status:" : "Статус:",
-    "No date" : "No date",
-    "Other activities" : "Други активности"
+    "No date" : "No date"
 },
 "nplurals=2; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : 1;");

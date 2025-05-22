@@ -45,6 +45,7 @@
     "Previous" : "Anterior",
     "Next" : "Siguiente",
     "Confirm" : "Confirmar",
+    "Administration" : "Alministración",
     "pending" : "pendiente",
     "Open sidebar" : "Abrir la barra llateral",
     "Details" : "Detalles",
@@ -81,6 +82,7 @@
     "Current password" : "Contraseña actual",
     "New password" : "Contraseña nueva",
     "Optional attributes" : "Atributos opcionales",
+    "Remove" : "Quitar",
     "Message" : "Mensaxe",
     "Dependencies" : "Dependencies",
     "Legal information" : "Información llegal",
@@ -89,7 +91,6 @@
     "Reset to default" : "Reafitar los valores",
     "Forgot password?" : "¿Escaeciesti la contraseña?",
     "Name:" : "Nome:",
-    "Status:" : "Estáu:",
-    "Other activities" : "Otres actividaes"
+    "Status:" : "Estáu:"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

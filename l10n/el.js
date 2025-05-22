@@ -68,6 +68,7 @@ OC.L10N.register(
     "Sign" : "Υπογραφή",
     "Confirm" : "Επιβεβαίωση",
     "Document not available for signature." : "Το έγγραφο δεν είναι διαθέσιμο για υπογραφή.",
+    "Administration" : "Διαχείριση",
     "Open sidebar" : "Άνοιγμα πλευρικής στήλης",
     "Details" : "Λεπτομέρειες",
     "Certificate" : "Πιστοποιητικό",
@@ -108,6 +109,7 @@ OC.L10N.register(
     "Current password" : "Τρέχον συνθηματικό",
     "New password" : "Νέο συνθηματικό",
     "Repeat password" : "Επανάληψη συνθηματικού",
+    "Remove" : "Αφαίρεση",
     "Message" : "Μήνυμα",
     "Resource" : "Πόρος",
     "Dependencies" : "Εξαρτήσεις",
@@ -124,7 +126,6 @@ OC.L10N.register(
     "Name:" : "Όνομα:",
     "Status:" : "Κατάσταση:",
     "No date" : "Καμία ημερομηνία",
-    "Return" : "Επιστροφή",
-    "Other activities" : "Άλλες δραστηριότητες"
+    "Return" : "Επιστροφή"
 },
 "nplurals=2; plural=(n != 1);");

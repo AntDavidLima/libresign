@@ -46,6 +46,7 @@ OC.L10N.register(
     "Previous" : "Fyrra",
     "Next" : "Næsta",
     "Confirm" : "Staðfesta",
+    "Administration" : "Stjórnun",
     "Open sidebar" : "Opna hliðarspjald",
     "Details" : "Details",
     "Certificate" : "Skilríki",
@@ -86,6 +87,7 @@ OC.L10N.register(
     "Current password" : "Núverandi lykilorð",
     "New password" : "Nýtt lykilorð",
     "Repeat password" : "Endurtaktu lykilorð",
+    "Remove" : "Fjarlægja",
     "Message" : "Skilaboð",
     "Resource" : "Tilfang",
     "Dependencies" : "Kerfiskröfur",
@@ -93,7 +95,6 @@ OC.L10N.register(
     "No" : "Nei",
     "Reset to default" : "Endurstilla á sjálfgefið",
     "Name:" : "Nafn:",
-    "No date" : "Engin dagsetning",
-    "Other activities" : "Aðrar athafnir"
+    "No date" : "Engin dagsetning"
 },
 "nplurals=2; plural=(n % 10 != 1 || n % 100 == 11);");

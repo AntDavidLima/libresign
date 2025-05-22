@@ -54,6 +54,7 @@ OC.L10N.register(
     "Previous" : "前へ",
     "Next" : "次へ",
     "Confirm" : "承認",
+    "Administration" : "管理",
     "pending" : "保留中",
     "Open sidebar" : "サイドバーを開く",
     "Details" : "詳細",
@@ -97,6 +98,7 @@ OC.L10N.register(
     "Current password" : "現在のパスワード",
     "New password" : "新たなパスワード",
     "Repeat password" : "パスワードをもう一度入力",
+    "Remove" : "削除",
     "Message" : "メッセージ",
     "Resource" : "リソース",
     "Dependencies" : "依存関係",
@@ -107,7 +109,6 @@ OC.L10N.register(
     "Name:" : "名前: ",
     "Status:" : "ステータス:",
     "No date" : "日付なし",
-    "Open in LibreSign" : "LibreSignで開く",
-    "Other activities" : "その他のアクティビティ"
+    "Open in LibreSign" : "LibreSignで開く"
 },
 "nplurals=1; plural=0;");

@@ -44,6 +44,7 @@ OC.L10N.register(
     "Previous" : "Precedentul",
     "Next" : "Următorul",
     "Confirm" : "Confirmă",
+    "Administration" : "Administrare",
     "Open sidebar" : "Deschide bara laterală",
     "Details" : "Detalii",
     "Certificate" : "Certificat",
@@ -77,13 +78,13 @@ OC.L10N.register(
     "Password reset" : "Resetare parolă",
     "Current password" : "Parola curentă",
     "New password" : "Noua parolă",
+    "Remove" : "Elimină",
     "Message" : "Mesaj",
     "Resource" : "Resursă",
     "Dependencies" : "Dependențe",
     "Yes" : "a",
     "No" : "Nu",
     "Name:" : "Nume:",
-    "No date" : "No date",
-    "Other activities" : "Alte activități"
+    "No date" : "No date"
 },
 "nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));");

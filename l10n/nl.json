@@ -17,8 +17,6 @@
     "Invalid UUID" : "Ongeldig UUID",
     "Notification sent with success." : "Het bericht werd succesvol verzonden.",
     "File signed" : "Bestand ondertekend",
-    "Invalid data to sign file" : "Ongeldige gegevens om het bestand te tekenen",
-    "The code to sign file was successfully requested." : "De code om het bestand te signeren is succesvol opgevraagd.",
     "Element created with success" : "Element succesvol gecreërd",
     "Elements created with success" : "Element succesvol gecreëerd",
     "Elements not found" : "Element niet gevonden",
@@ -54,6 +52,7 @@
     "Field %s not found" : "Veld %s niet gevonden",
     "Field %s does not belong to user" : "Veld %s behoort niet tot een gebruiker",
     "You need to define a visible signature or initials to sign this document." : "Je moet een zichtbare handtekening of paraaf definiëren om dit document te signeren.",
+    "Invalid data to sign file" : "Ongeldige gegevens om het bestand te tekenen",
     "This file is not yours" : "Dit bestand is niet van jou",
     "This file cannot be signed. Invalid status: %s" : "Dit bestand kan niet worden getekend. Ongeldige status: %s",
     "File type: %s. Must be a fileID of %s format." : "Bestandstype: %s. Moet een fileID of %s formaat zijn.",
@@ -62,7 +61,6 @@
     "You do not have permission for this action." : "Je hebt geen machtiging voor deze actie.",
     "Invalid status code for file." : "Ongeldige status code voor bestand.",
     "Sign process already started. Unable to change status." : "Signeerproces reeds begonnen. Kan status niet veranderen.",
-    "Inform or UUID or a File object" : "Informeren van UUID of een bestandsobject",
     "No user data" : "Geen gebruikersgegevens",
     "User %s has no email address." : "Gebruiker %s heeft geen e-mailadres.",
     "Email required" : "E-mailadres verplicht",
@@ -152,6 +150,7 @@
     "Request signatures?" : "Handtekeningen aanvragen?",
     "Send reminder" : "Versturen herinnering",
     "Document not available for signature." : "Document niet beschikbaar voor ondertekening.",
+    "Administration" : "Beheer",
     "pending" : "in behandeling",
     "Open sidebar" : "Open zijbalk",
     "Details" : "Details",
@@ -210,6 +209,7 @@
     "Current password" : "Huidig wachtwoord",
     "New password" : "Nieuw wachtwoord",
     "Repeat password" : "Herhaal wachtwoord",
+    "Remove" : "Verwijderen",
     "Message" : "Bericht",
     "Resource" : "Bron",
     "Dependencies" : "Afhankelijkheden",
@@ -250,11 +250,6 @@
     "No date" : "Geen datum",
     "Return" : "Terug",
     "Open in LibreSign" : "Openen in LibreSign",
-    "Requested by {name}, at {date}" : "Aangevraagd door {name}, op {date}",
-    "Other activities" : "Andere activiteiten",
-    "Digital signed by LibreSign." : "Digitaal ondertekend door LibreSign.",
-    "Account not exist" : "Account bestaat niet",
-    "No signature, click here to create a new" : "Geen handtekening, klik hier om een nieuwe te creëren",
-    "No initials, click here to create a new" : "Geen initialen, klik hier om een nieuwe te creëren"
+    "Requested by {name}, at {date}" : "Aangevraagd door {name}, op {date}"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

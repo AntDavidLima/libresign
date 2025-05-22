@@ -42,6 +42,7 @@ OC.L10N.register(
     "Previous" : "Previous",
     "Next" : "Next",
     "Confirm" : "Confirm",
+    "Administration" : "Administration",
     "pending" : "pending",
     "Open sidebar" : "Open sidebar",
     "Details" : "Details",
@@ -77,6 +78,7 @@ OC.L10N.register(
     "Current password" : "Current password",
     "New password" : "New password",
     "Repeat password" : "Repeat password",
+    "Remove" : "Remove",
     "Message" : "Message",
     "Dependencies" : "Dependencies",
     "Yes" : "Yes",
@@ -84,7 +86,6 @@ OC.L10N.register(
     "Reset to default" : "Reset to default",
     "Forgot password?" : "Forgot password?",
     "Name:" : "Name:",
-    "Status:" : "Status:",
-    "Other activities" : "Other activities"
+    "Status:" : "Status:"
 },
 "nplurals=2; plural=(n!=1);");
