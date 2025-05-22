@@ -212,6 +212,7 @@ namespace OCA\Libresign;
  *         file: array{
  *             type: string,
  *             nodeId: non-negative-int,
+ *             signedNodeId: non-negative-int,
  *             url: string,
  *         },
  *         callback: ?string,
